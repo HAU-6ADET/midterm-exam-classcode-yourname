@@ -67,6 +67,19 @@ row shows a different monster, and tapping a monster opens its full detail, you
 have fixed everything. Read your answers off the app (or `dart run
 tool/report.dart` for the stats card) and enter them in Canvas.
 
+## No laptop? Fix it in the browser
+
+You do not have to run anything locally. You can edit the files right on
+github.com (open a file, click the pencil, commit), and every push runs your app
+for you on GitHub. Open the run under the **Actions** tab and its **summary**
+shows two things: a self-check of whether each bug and TODO is fixed, and **your
+current answers to the 10 quiz questions**. It also saves a screenshot of your
+app as the **app-screenshot** artifact.
+
+This check does **not** grade you: your grade is the Canvas quiz. It only tells
+you how far you have got. Read your answers from the run summary (or, if you can
+run it, `dart run tool/report.dart` plus the app) and enter them in Canvas.
+
 ## The data
 
 One list of **200 monsters** in `lib/data.dart`, each with a name, type,
