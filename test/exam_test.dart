@@ -99,7 +99,7 @@ void main() {
     debugPrint('Q3  High HP (> 70)        : ${highHpCount(all)}');
     debugPrint('Q4  Top region            : ${topRegion(all)}');
     debugPrint('Q5  "wraith" filter count : $q5');
-    debugPrint('Q6  Repeated tile name    : read this off the ORIGINAL buggy app (before BUG E)');
+    debugPrint('Q6  First row name         : ${kMonsters.first.name}');
     debugPrint('Q7  Monster 42 type       : $q7');
     debugPrint('Q8  Monster 42 attack     : $q8');
     debugPrint('Q9  Monster 42 element    : $q9');

@@ -20,9 +20,10 @@ String mostCommonType(List<Monster> ms) {
     counts[m.type] = (counts[m.type] ?? 0) + 1;
   }
   var best = ms.first.type;
-  var bestCount = 1 << 30;
+  var bestCount = -1;
   for (final entry in counts.entries) {
-    // BUG A: this keeps the LEAST common type, not the most common.
+    // BUG A: the comparison is backwards, so the "Most common type" panel shows
+    // the wrong type. It should keep the type with the HIGHEST count.
     if (entry.value < bestCount) {
       best = entry.key;
       bestCount = entry.value;
