@@ -67,7 +67,19 @@ row shows a different monster, and tapping a monster opens its full detail, you
 have fixed everything. Read your answers off the app (or `dart run
 tool/report.dart` for the stats card) and enter them in Canvas.
 
-## No laptop? Fix it in the browser
+## Trust the GREEN check, not the panel
+
+The app shows a number in every panel whether or not your fix is correct, so do
+not just read the panels and assume they are right. Confirm first:
+
+- Run `flutter test`. When it says **all tests passed**, every bug and TODO is
+  fixed and every panel is trustworthy. A red result means at least one value on
+  screen is still wrong, even if it looks reasonable.
+- If you change the code and a panel does not update, press **R** in the
+  `flutter run` terminal for a hot restart. If it still shows the old value, your
+  fix is not finished yet, and the check will be red.
+
+Read your answers only after the check is green.## No laptop? Fix it in the browser
 
 You do not have to run anything locally. You can edit the files right on
 github.com (open a file, click the pencil, commit), and every push runs your app
